@@ -101,12 +101,6 @@ public class DashboardView extends VerticalLayout implements BeforeEnterObserver
                     "View your grades and performance analytics",
                     "student-grades"));
 
-            // Additional student cards could be added here
-            cardLayout.add(createNavigationCard(
-                    "Course Materials",
-                    "Access your course materials and resources",
-                    "student-materials"));
-
         } else if (sessionService.isFaculty()) {
             // Faculty navigation options
             cardLayout.add(createNavigationCard(
